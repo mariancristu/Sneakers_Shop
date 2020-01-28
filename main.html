@@ -15,46 +15,103 @@
       href="https://fonts.googleapis.com/css?family=Anton|Roboto:500&display=swap"
       rel="stylesheet"
     />
+    <script src="https://use.fontawesome.com/8de13782d2.js"></script>
     <title>SNEAKERS SHOP -- Main Page</title>
   </head>
   <body>
-    <div class="main-container h-100 d-flex">
-      <aside class="asside-menu col-2 pl-0 pr-0 d-flex flex-column">
-        <div class="col-1 mw-100 pt-3 pb-3">
-          <span class="text-nowrap">SNEAKERS SHOP</span>
+    <div class="main-container h-100 d-flex flex-column">
+      <div class="small-nav col flex-grow-0 d-inline-flex d-md-none">
+        <span class="">SNEAKERS SHOP</span>
+        <div>
+          <span class="icon-menu d-block">&nbsp;</span>
+          <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
+          <span class="icon-menu icon-menu-2 d-block"></span>
         </div>
-        <div
-          class="category-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
-        >
-          <a class="d-block" href="">Men</a>
-          <a class="d-block" href="">Women</a>
-          <a class="d-block" href="">Objects</a>
-        </div>
-        <div class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2">
-          <div>
-            <span class="icon-menu d-block">&nbsp;</span>
-            <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
-            <span class="icon-menu icon-menu-2 d-block"></span>
-          </div>
-          <a class="menu-link pl-2" href="">Menu</a>
-        </div>
-        <div
-          class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
-        >
-          <a class="d-block" href="">Instagram</a>
-          <a class="d-block" href="">Facebook</a>
-          <a class="d-block" href="">Twitter</a>
-          <a class="d-block" href="">Youtube</a>
-        </div>
-      </aside>
-      <div class="center pl-0 pr-0 col-8">
-        <div class="big-image">
-          <img src="wallpaper/big-image.jpg" class="w-100 h-100" alt="" />
-        </div>
-        <div class="small-image"></div>
-        <div class="information"></div>
       </div>
-      <aside class="asside-right pl-0 pr-0 col-2"></aside>
+      <div class="small-main-container h-100 d-flex col-11 max-h pl-0 pr-0">
+        <aside class="asside-menu col-2 pl-0 pr-0 d-none d-md-flex flex-column">
+          <div class="col-1 mw-100 pt-3 pb-3">
+            <span class="text-nowrap">SNEAKERS SHOP</span>
+          </div>
+          <div
+            class="category-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
+          >
+            <a class="d-block" href="">Men</a>
+            <a class="d-block" href="">Women</a>
+            <a class="d-block" href="">Objects</a>
+          </div>
+          <div class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2">
+            <div>
+              <span class="icon-menu d-block">&nbsp;</span>
+              <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
+              <span class="icon-menu icon-menu-2 d-block"></span>
+            </div>
+            <a class="menu-link pl-2" href="">Menu</a>
+          </div>
+          <div
+            class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
+          >
+            <a class="d-block" href="">Instagram</a>
+            <a class="d-block" href="">Facebook</a>
+            <a class="d-block" href="">Twitter</a>
+            <a class="d-block" href="">Youtube</a>
+          </div>
+        </aside>
+        <div class="center pl-0 pr-0 col-12 col-md-8 ">
+          <div class="big-image">
+            <img src="wallpaper/big-image.jpg" class="w-100" alt="" />
+          </div>
+          <div class="small-image d-none d-md-block">
+            <img src="wallpaper/small-image.jpg" class="w-100 h-100" alt="" />
+          </div>
+          <div class="information d-flex flex-column pt-3 pt-md-5 pl-2 pl-md-4">
+            <div class="flex-grow-1">
+              <span class="col mw-100 d-block">SNEAKERS SHOP</span>
+              <span class="col">COLLECTIONS</span>
+            </div>
+            <a class="pb-4 pl-3 shop" href="">Shop Now</a>
+          </div>
+        </div>
+        <aside
+          class="asside-right pl-0 pr-0 col-2 d-none d-md-flex flex-column"
+        >
+          <div class="col text-right pt-3 pr-4">
+            <div class="pb-3">
+              <span class="f-size-14">Cart</span>
+              <div class="d-inline-block circle text-center">
+                <i class="fa fa-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="pb-3">
+              <span class="f-size-14">Search</span>
+              <div class="d-inline-block circle text-center">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="pb-3">
+              <span class="f-size-14">Search</span>
+              <div class="d-inline-block circle text-center">
+                <i class="fa fa-user"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col text-right pr-4 pt-4 pb-0 indicator">
+            <div>
+              <span class="f-size-14 text-nowrap">01 / 05</span>
+            </div>
+            <div>
+              <span class="line line-long d-block mt-2 ml-2">&nbsp;</span>
+              <span class="line d-block mt-2 ml-2">&nbsp;</span>
+              <span class="line d-block mt-2 ml-2">&nbsp;</span>
+              <span class="line d-block mt-2 ml-2">&nbsp;</span>
+              <span class="line d-block mt-2 ml-2">&nbsp;</span>
+            </div>
+          </div>
+          <div class="col text-right ">
+            <span class="transform-text">Scroll Down</span>
+          </div>
+        </aside>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
