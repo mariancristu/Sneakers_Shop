@@ -31,6 +31,10 @@ body {
   color: var(--dark-color);
 }
 
+.menu-window a {
+  color: var(--dark-color);
+}
+
 .asside-menu a:hover {
   text-decoration-color: var(--dark-color);
   color: var(--dark-color);
@@ -46,6 +50,10 @@ body {
 .menu-link {
   font-size: 14px;
   font-weight: lighter;
+}
+
+.menu-link:hover {
+  cursor: pointer;
 }
 
 .icon-menu {
@@ -122,6 +130,10 @@ body {
   font-size: 14px;
 }
 
+.f-size-12 {
+  font-size: 12px;
+}
+
 .line {
   border-top: 3px solid var(--dark-color);
   height: 2px;
@@ -159,6 +171,31 @@ body {
 
 .max-h {
   max-height: 93vh;
+}
+
+.menu-window {
+  min-height: 300px;
+  height: 50%;
+  top: 25%;
+  z-index: 9999;
+  background-color: var(--gray-color);
+  display: grid;
+  grid-template-columns: repeat(4, 15%);
+  justify-content: center;
+  justify-items: center;
+  padding-top: 5%;
+  column-gap: 20px;
+  opacity: 0.9;
+}
+
+.menu-window ul {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.menu-window a:hover {
+  color: var(--dark-color);
+  text-decoration-color: var(--dark-color);
 }
 
 @media only screen and (max-width: 767px) {

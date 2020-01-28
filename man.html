@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/principal.css" />
+    <link rel="stylesheet" href="css/man.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -18,7 +19,7 @@
     <script src="https://use.fontawesome.com/8de13782d2.js"></script>
     <title>SNEAKERS SHOP -- Main Page</title>
   </head>
-  <body onresize="resizeEvent()">
+  <body>
     <div class="main-container h-100 d-flex flex-column">
       <div class="small-nav col flex-grow-0 d-inline-flex d-md-none">
         <span class="">SNEAKERS SHOP</span>
@@ -40,16 +41,13 @@
             <a class="d-block" href="">Women</a>
             <a class="d-block" href="">Objects</a>
           </div>
-          <div
-            id="menu-button"
-            class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2"
-          >
+          <div class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2">
             <div>
               <span class="icon-menu d-block">&nbsp;</span>
               <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
               <span class="icon-menu icon-menu-2 d-block"></span>
             </div>
-            <span class="menu-link pl-2" href="">Menu</span>
+            <a class="menu-link pl-2" href="">Menu</a>
           </div>
           <div
             class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -60,59 +58,7 @@
             <a class="d-block" href="">Youtube</a>
           </div>
         </aside>
-        <div class="center pl-0 pr-0 col-12 col-md-8 position-relative">
-          <div class="big-image">
-            <img src="wallpaper/big-image.jpg" class="w-100" alt="" />
-          </div>
-          <div class="small-image d-none d-md-block">
-            <img src="wallpaper/small-image.jpg" class="w-100 h-100" alt="" />
-          </div>
-          <div class="information d-flex flex-column pt-3 pt-md-5 pl-2 pl-md-4">
-            <div class="flex-grow-1">
-              <span class="col mw-100 d-block">SNEAKERS SHOP</span>
-              <span class="col">COLLECTIONS</span>
-            </div>
-            <a class="pb-4 pl-3 shop" href="">Shop Now</a>
-          </div>
-          <div
-            id="menu-window"
-            class="position-absolute w-100 menu-window d-none"
-          >
-            <div>
-              <span class="f-size-14 d-block">SHOP</span>
-              <ul class="d-inline f-size-12">
-                <li><a href="">Men</a></li>
-                <li><a href="">Women</a></li>
-                <li><a href="">Objects</a></li>
-              </ul>
-            </div>
-            <div>
-              <span class="f-size-14 d-block">COMPANY</span>
-              <ul class="d-inline f-size-12">
-                <li><a href="">Our Story</a></li>
-                <li><a href="">Careeres</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Privacy</a></li>
-              </ul>
-            </div>
-            <div>
-              <span class="f-size-14 d-block">SUPPORT</span>
-              <ul class="d-inline f-size-12">
-                <li><a href="">Men</a></li>
-                <li><a href="">Women</a></li>
-                <li><a href="">Objects</a></li>
-              </ul>
-            </div>
-            <div>
-              <span class="f-size-14 d-block">STORES</span>
-              <ul class="d-inline f-size-12">
-                <li><a href="">Men</a></li>
-                <li><a href="">Women</a></li>
-                <li><a href="">Objects</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <div class="center pl-0 pr-0 col-12 col-md-8 "></div>
         <aside
           class="asside-right pl-0 pr-0 col-2 d-none d-md-flex flex-column"
         >
@@ -154,22 +100,6 @@
         </aside>
       </div>
     </div>
-    <script>
-      var windowMenu = document.getElementById("menu-window");
-      var menuButton = document.getElementById("menu-button");
-      menuButton.onclick = function() {
-        if (windowMenu.classList.contains("d-none")) {
-          windowMenu.classList.remove("d-none");
-        } else {
-          windowMenu.classList.add("d-none");
-        }
-      };
-      function resizeEvent() {
-        if (!windowMenu.classList.contains("d-none")) {
-          windowMenu.classList.add("d-none");
-        }
-      }
-    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
