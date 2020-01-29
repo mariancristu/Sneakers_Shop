@@ -141,21 +141,37 @@
         >
           <div class="col text-right pt-3 pr-4">
             <div class="pb-3">
-              <span class="f-size-14">Cart</span>
-              <div class="d-inline-block circle text-center">
-                <i class="fa fa-shopping-cart"></i>
+              <span id="span" class="f-size-14 d-none">Cart</span>
+              <div
+                class="d-inline-block circle text-center"
+                id="test"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i
+                  class="fa fa-shopping-cart"
+                  onmouseover="otherHoverFunc(event)"
+                ></i>
               </div>
             </div>
             <div class="pb-3">
-              <span class="f-size-14">Search</span>
-              <div class="d-inline-block circle text-center">
-                <i class="fa fa-search"></i>
+              <span class="f-size-14 d-none">Search</span>
+              <div
+                class="d-inline-block circle text-center"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i class="fa fa-search" onmouseover="otherHoverFunc(event)"></i>
               </div>
             </div>
             <div class="pb-3">
-              <span class="f-size-14">Search</span>
-              <div class="d-inline-block circle text-center">
-                <i class="fa fa-user"></i>
+              <span class="f-size-14 d-none">Search</span>
+              <div
+                class="d-inline-block circle text-center"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i class="fa fa-user" onmouseover="otherHoverFunc(event)"></i>
               </div>
             </div>
           </div>
@@ -191,6 +207,18 @@
         if (!windowMenu.classList.contains("d-none")) {
           windowMenu.classList.add("d-none");
         }
+      }
+      function hoverFunc(event) {
+        event.target.previousElementSibling.classList.remove("d-none");
+      }
+      function exitHoverFunc(event) {
+        event.target.previousElementSibling.classList.add("d-none");
+      }
+
+      function otherHoverFunc(event) {
+        event.target.parentNode.previousElementSibling.classList.remove(
+          "d-none"
+        );
       }
     </script>
     <script
