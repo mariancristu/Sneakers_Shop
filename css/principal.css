@@ -137,15 +137,15 @@ body {
 }
 
 .f-size-14 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .f-size-12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .f-size-20 {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .line {
