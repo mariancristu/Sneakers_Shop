@@ -35,6 +35,16 @@ body {
   color: var(--dark-color);
 }
 
+.small-nav a {
+  font-size: 12px;
+  color: var(--dark-color);
+}
+
+.small-nav a:hover {
+  color: var(--dark-color);
+  text-decoration-color: var(--dark-color);
+}
+
 .asside-menu a:hover {
   text-decoration-color: var(--dark-color);
   color: var(--dark-color);
@@ -196,6 +206,10 @@ body {
 .menu-window a:hover {
   color: var(--dark-color);
   text-decoration-color: var(--dark-color);
+}
+
+.right-menu:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {

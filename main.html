@@ -20,12 +20,35 @@
   </head>
   <body onresize="resizeEvent()">
     <div class="main-container h-100 d-flex flex-column">
-      <div class="small-nav col flex-grow-0 d-inline-flex d-md-none">
+      <div
+        class="small-nav col flex-grow-0 d-inline-flex d-md-none position-relative"
+      >
         <span class="">SNEAKERS SHOP</span>
-        <div>
-          <span class="icon-menu d-block">&nbsp;</span>
-          <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
-          <span class="icon-menu icon-menu-2 d-block"></span>
+        <div class="dropdown">
+          <button
+            id="right-menu"
+            type="button"
+            class="btn right-menu"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="icon-menu d-block">&nbsp;</span>
+            <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
+            <span class="icon-menu icon-menu-2 d-block"></span>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right pl-3"
+            aria-labelledby="right-menu"
+          >
+            <a class="d-block" href="">SHOP</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">COMPANY</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">SUPPORT</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">STORES</a>
+          </div>
         </div>
       </div>
       <div class="small-main-container h-100 d-flex col-11 max-h pl-0 pr-0">
