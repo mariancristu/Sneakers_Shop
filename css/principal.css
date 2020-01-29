@@ -144,6 +144,10 @@ body {
   font-size: 12px;
 }
 
+.f-size-20 {
+  font-size: 20px;
+}
+
 .line {
   border-top: 3px solid var(--dark-color);
   height: 2px;

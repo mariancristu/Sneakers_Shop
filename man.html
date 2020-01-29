@@ -19,14 +19,37 @@
     <script src="https://use.fontawesome.com/8de13782d2.js"></script>
     <title>SNEAKERS SHOP -- Main Page</title>
   </head>
-  <body>
+  <body onresize="resizeEvent()">
     <div class="main-container h-100 d-flex flex-column">
-      <div class="small-nav col flex-grow-0 d-inline-flex d-md-none">
+      <div
+        class="small-nav col flex-grow-0 d-inline-flex d-md-none position-relative"
+      >
         <span class="">SNEAKERS SHOP</span>
-        <div>
-          <span class="icon-menu d-block">&nbsp;</span>
-          <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
-          <span class="icon-menu icon-menu-2 d-block"></span>
+        <div class="dropdown">
+          <button
+            id="right-menu"
+            type="button"
+            class="btn right-menu"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="icon-menu d-block">&nbsp;</span>
+            <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
+            <span class="icon-menu icon-menu-2 d-block"></span>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right pl-3"
+            aria-labelledby="right-menu"
+          >
+            <a class="d-block" href="">SHOP</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">COMPANY</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">SUPPORT</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">STORES</a>
+          </div>
         </div>
       </div>
       <div class="small-main-container h-100 d-flex col-11 max-h pl-0 pr-0">
@@ -41,13 +64,16 @@
             <a class="d-block" href="">Women</a>
             <a class="d-block" href="">Objects</a>
           </div>
-          <div class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2">
+          <div
+            id="menu-button"
+            class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2"
+          >
             <div>
               <span class="icon-menu d-block">&nbsp;</span>
               <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
               <span class="icon-menu icon-menu-2 d-block"></span>
             </div>
-            <a class="menu-link pl-2" href="">Menu</a>
+            <span class="menu-link pl-2" href="">Menu</span>
           </div>
           <div
             class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -58,27 +84,129 @@
             <a class="d-block" href="">Youtube</a>
           </div>
         </aside>
-        <div class="center pl-0 pr-0 col-12 col-md-8 "></div>
+        <div class="center p-3 col-12 col-md-8 position-relative">
+          <div class="category-title">
+            <span class="f-size-20">MEN'S SNEAKERS</span>
+          </div>
+          <div class="category-products">
+            <a href="">
+              <img src="men_category/men-1.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">150 &dollar;</span>
+            </a>
+            <a href="">
+              <img src="men_category/men-2.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">150 &dollar;</span>
+            </a>
+            <a href="">
+              <img src="men_category/men-3.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">150 &dollar;</span>
+            </a>
+            <a href="">
+              <img src="men_category/men-4.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">89.99 &dollar;</span>
+            </a>
+            <a href="">
+              <img src="men_category/men-5.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">150 &dollar;</span>
+            </a>
+            <a href="">
+              <img src="men_category/men-6.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">90 &dollar;</span>
+            </a>
+            <a href="">
+              <img src="men_category/men-7.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">150 &dollar;</span>
+            </a>
+            <a href="">
+              <img src="men_category/men-8.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">250 &dollar;</span>
+            </a>
+            <a href="">
+              <img src="men_category/men-9.jpg" alt="" />
+              <span class="name-category">Men Sneakers</span>
+              <span class="price-product">150 &dollar;</span>
+            </a>
+          </div>
+          <div id="menu-window" class="position-fixed menu-window d-none">
+            <div>
+              <span class="f-size-14 d-block">SHOP</span>
+              <ul class="d-inline f-size-12">
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Objects</a></li>
+              </ul>
+            </div>
+            <div>
+              <span class="f-size-14 d-block">COMPANY</span>
+              <ul class="d-inline f-size-12">
+                <li><a href="">Our Story</a></li>
+                <li><a href="">Careeres</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
+              </ul>
+            </div>
+            <div>
+              <span class="f-size-14 d-block">SUPPORT</span>
+              <ul class="d-inline f-size-12">
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Objects</a></li>
+              </ul>
+            </div>
+            <div>
+              <span class="f-size-14 d-block">STORES</span>
+              <ul class="d-inline f-size-12">
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Objects</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <aside
           class="asside-right pl-0 pr-0 col-2 d-none d-md-flex flex-column"
         >
           <div class="col text-right pt-3 pr-4">
             <div class="pb-3">
-              <span class="f-size-14">Cart</span>
-              <div class="d-inline-block circle text-center">
-                <i class="fa fa-shopping-cart"></i>
+              <span id="span" class="f-size-14 d-none">Cart</span>
+              <div
+                class="d-inline-block circle text-center"
+                id="test"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i
+                  class="fa fa-shopping-cart"
+                  onmouseover="otherHoverFunc(event)"
+                ></i>
               </div>
             </div>
             <div class="pb-3">
-              <span class="f-size-14">Search</span>
-              <div class="d-inline-block circle text-center">
-                <i class="fa fa-search"></i>
+              <span class="f-size-14 d-none">Search</span>
+              <div
+                class="d-inline-block circle text-center"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i class="fa fa-search" onmouseover="otherHoverFunc(event)"></i>
               </div>
             </div>
             <div class="pb-3">
-              <span class="f-size-14">Search</span>
-              <div class="d-inline-block circle text-center">
-                <i class="fa fa-user"></i>
+              <span class="f-size-14 d-none">Account</span>
+              <div
+                class="d-inline-block circle text-center"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i class="fa fa-user" onmouseover="otherHoverFunc(event)"></i>
               </div>
             </div>
           </div>
@@ -100,6 +228,34 @@
         </aside>
       </div>
     </div>
+    <script>
+      var windowMenu = document.getElementById("menu-window");
+      var menuButton = document.getElementById("menu-button");
+      menuButton.onclick = function() {
+        if (windowMenu.classList.contains("d-none")) {
+          windowMenu.classList.remove("d-none");
+        } else {
+          windowMenu.classList.add("d-none");
+        }
+      };
+      function resizeEvent() {
+        if (!windowMenu.classList.contains("d-none")) {
+          windowMenu.classList.add("d-none");
+        }
+      }
+      function hoverFunc(event) {
+        event.target.previousElementSibling.classList.remove("d-none");
+      }
+      function exitHoverFunc(event) {
+        event.target.previousElementSibling.classList.add("d-none");
+      }
+
+      function otherHoverFunc(event) {
+        event.target.parentNode.previousElementSibling.classList.remove(
+          "d-none"
+        );
+      }
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
