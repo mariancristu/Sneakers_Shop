@@ -182,3 +182,9 @@
     margin-bottom: 0 !important;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .first-element {
+    display: none;
+  }
+}
