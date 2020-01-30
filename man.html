@@ -89,47 +89,47 @@
             <span class="f-size-20">MEN'S SNEAKERS</span>
           </div>
           <div class="category-products">
-            <a href="product.html">
+            <a href="product.html" onclick="saveData('men1')">
               <img src="men_category/men-1.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">150 &dollar;</span>
             </a>
-            <a href="">
+            <a href="product.html" onclick="saveData('men2')">
               <img src="men_category/men-2.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">150 &dollar;</span>
             </a>
-            <a href="">
+            <a href="product.html" onclick="saveData('men3')">
               <img src="men_category/men-3.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">150 &dollar;</span>
             </a>
-            <a href="">
+            <a href="product.html" onclick="saveData('men4')">
               <img src="men_category/men-4.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">89.99 &dollar;</span>
             </a>
-            <a href="">
+            <a href="product.html" onclick="saveData('men5')">
               <img src="men_category/men-5.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">150 &dollar;</span>
             </a>
-            <a href="">
+            <a href="product.html" onclick="saveData('men6')">
               <img src="men_category/men-6.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">90 &dollar;</span>
             </a>
-            <a href="">
+            <a href="product.html" onclick="saveData('men7')">
               <img src="men_category/men-7.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">150 &dollar;</span>
             </a>
-            <a href="">
+            <a href="product.html" onclick="saveData('men8')">
               <img src="men_category/men-8.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">250 &dollar;</span>
             </a>
-            <a href="">
+            <a href="product.html" onclick="saveData('men9')">
               <img src="men_category/men-9.jpg" alt="" />
               <span class="name-category">Men Sneakers</span>
               <span class="price-product">150 &dollar;</span>
@@ -254,6 +254,10 @@
         event.target.parentNode.previousElementSibling.classList.remove(
           "d-none"
         );
+      }
+
+      function saveData(data) {
+        localStorage.setItem("location", data);
       }
     </script>
     <script
