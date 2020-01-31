@@ -23,7 +23,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/mariancristu/Sneakers_Shop/splash-screen/index.html)
+[Live Demo Link](https://raw.githack.com/mariancristu/Sneakers_Shop/complete-project/man.html)
 
 ## Getting Started
 
