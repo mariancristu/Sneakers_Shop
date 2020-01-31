@@ -2,7 +2,15 @@
 
 ## HTML CSS Capstone project
 
+## Description
+
+    This website is an simulation of an Online Shop. The category chosen is sneakers.
+
 ![screenshot](screenshoot/screenshoot.png)
+
+## VIDEO Presentation
+
+<a href="https://www.loom.com/share/e127a5ea6cf8492998a05674c42f0653"> <p>Cristu Marian - Sneakers Shop - Watch Video</p> <img style="width: 100%;" src="https://cdn.loom.com/sessions/thumbnails/e127a5ea6cf8492998a05674c42f0653-with-play.gif"> </a>
 
 ## Built With
 

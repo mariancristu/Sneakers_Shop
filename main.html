@@ -23,12 +23,12 @@
     <title>SNEAKERS SHOP -- Main Page</title>
   </head>
   <body onresize="resizeEvent()">
-    <div class="main-container h-100 d-flex flex-column">
-      <div
+    <main class="main-container h-100 d-flex flex-column">
+      <nav
         class="small-nav col flex-grow-0 d-inline-flex d-md-none position-relative"
       >
-        <span class="">SNEAKERS SHOP</span>
-        <div class="dropdown">
+        <a href="main.html">SNEAKERS SHOP</a>
+        <div class="dropdown m-0">
           <button
             id="right-menu"
             type="button"
@@ -54,11 +54,13 @@
             <a class="d-block" href="">STORES</a>
           </div>
         </div>
-      </div>
+      </nav>
       <div class="small-main-container h-100 d-flex col-11 max-h pl-0 pr-0">
         <aside class="asside-menu col-2 pl-0 pr-0 d-none d-md-flex flex-column">
           <div class="col-1 mw-100 pt-3 pb-3">
-            <span class="text-nowrap">SNEAKERS SHOP</span>
+            <a href="main.html" class="text-nowrap text-decoration-none"
+              >SNEAKERS SHOP</a
+            >
           </div>
           <div
             class="category-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -72,11 +74,11 @@
             class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2"
           >
             <div>
-              <span class="icon-menu d-block">&nbsp;</span>
-              <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
-              <span class="icon-menu icon-menu-2 d-block"></span>
+              <p class="icon-menu d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-1 d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-2 d-block"></p>
             </div>
-            <span class="menu-link pl-2">Menu</span>
+            <p class="menu-link pl-2">Menu</p>
           </div>
           <div
             class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -87,26 +89,26 @@
             <a class="d-block" href="">Youtube</a>
           </div>
         </aside>
-        <div class="center pl-0 pr-0 col-12 col-md-8 position-relative">
-          <div class="big-image">
+        <section class="center pl-0 pr-0 col-12 col-md-8 position-relative">
+          <figure class="big-image">
             <img src="wallpaper/big-image.jpg" class="w-100" alt="" />
-          </div>
-          <div class="small-image d-none d-md-block">
+          </figure>
+          <figure class="small-image d-none d-md-block">
             <img src="wallpaper/small-image.jpg" class="w-100 h-100" alt="" />
-          </div>
+          </figure>
           <div class="information d-flex flex-column pt-3 pt-md-5 pl-2 pl-md-4">
             <div class="flex-grow-1">
-              <span class="col mw-100 d-block">SNEAKERS SHOP</span>
-              <span class="col">COLLECTIONS</span>
+              <h6 class="col mw-100 d-block">SNEAKERS SHOP</h6>
+              <p class="col">COLLECTIONS</p>
             </div>
             <a class="pb-4 pl-3 shop" href="man.html">Shop Now</a>
           </div>
-          <div
+          <nav
             id="menu-window"
             class="position-absolute w-100 menu-window d-none"
           >
             <div>
-              <span class="f-size-14 d-block">SHOP</span>
+              <p class="f-size-14 d-block">SHOP</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
@@ -114,7 +116,7 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">COMPANY</span>
+              <p class="f-size-14 d-block">COMPANY</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Our Story</a></li>
                 <li><a href="">Careeres</a></li>
@@ -123,7 +125,7 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">SUPPORT</span>
+              <p class="f-size-14 d-block">SUPPORT</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
@@ -131,21 +133,21 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">STORES</span>
+              <p class="f-size-14 d-block">STORES</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
                 <li><a href="">Objects</a></li>
               </ul>
             </div>
-          </div>
-        </div>
+          </nav>
+        </section>
         <aside
           class="asside-right pl-0 pr-0 col-2 d-none d-md-flex flex-column"
         >
-          <div class="col text-right pt-3 pr-4">
+          <nav class="col text-right pt-3 pr-4">
             <div class="pb-3">
-              <span id="span" class="f-size-14 d-none">Cart</span>
+              <span id="p" class="f-size-14 d-none">Cart</span>
               <div
                 class="d-inline-block circle text-center"
                 id="test"
@@ -178,25 +180,25 @@
                 <i class="fa fa-user" onmouseover="otherHoverFunc(event)"></i>
               </div>
             </div>
-          </div>
+          </nav>
           <div class="col text-right pr-4 pt-4 pb-0 indicator">
             <div>
-              <span class="f-size-14 text-nowrap">01 / 05</span>
+              <p class="f-size-14 text-nowrap">01 / 05</p>
             </div>
             <div>
-              <span class="line line-long d-block mt-2 ml-2">&nbsp;</span>
-              <span class="line d-block mt-2 ml-2">&nbsp;</span>
-              <span class="line d-block mt-2 ml-2">&nbsp;</span>
-              <span class="line d-block mt-2 ml-2">&nbsp;</span>
-              <span class="line d-block mt-2 ml-2">&nbsp;</span>
+              <p class="line line-long d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
             </div>
           </div>
           <div class="col text-right ">
-            <span class="transform-text">Scroll Down</span>
+            <p class="transform-text">Scroll Down</p>
           </div>
         </aside>
       </div>
-    </div>
+    </main>
     <script>
       var windowMenu = document.getElementById("menu-window");
       var menuButton = document.getElementById("menu-button");

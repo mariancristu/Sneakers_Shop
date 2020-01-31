@@ -24,12 +24,12 @@
     <title>SNEAKERS SHOP -- Main Page</title>
   </head>
   <body onresize="resizeEvent()">
-    <div class="main-container h-100 d-flex flex-column">
-      <div
+    <main class="main-container h-100 d-flex flex-column">
+      <nav
         class="small-nav col flex-grow-0 d-inline-flex d-md-none position-relative"
       >
-        <span class="">SNEAKERS SHOP</span>
-        <div class="dropdown">
+        <a href="main.html">SNEAKERS SHOP</a>
+        <div class="dropdown m-0">
           <button
             id="right-menu"
             type="button"
@@ -55,11 +55,13 @@
             <a class="d-block" href="">STORES</a>
           </div>
         </div>
-      </div>
+      </nav>
       <div class="small-main-container h-100 d-flex col-11 max-h pl-0 pr-0">
         <aside class="asside-menu col-2 pl-0 pr-0 d-none d-md-flex flex-column">
           <div class="col-1 mw-100 pt-3 pb-3">
-            <span class="text-nowrap">SNEAKERS SHOP</span>
+            <a href="main.html" class="text-nowrap text-decoration-none"
+              >SNEAKERS SHOP</a
+            >
           </div>
           <div
             class="category-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -73,11 +75,11 @@
             class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2"
           >
             <div>
-              <span class="icon-menu d-block">&nbsp;</span>
-              <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
-              <span class="icon-menu icon-menu-2 d-block"></span>
+              <p class="icon-menu d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-1 d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-2 d-block"></p>
             </div>
-            <span class="menu-link pl-2">Menu</span>
+            <p class="menu-link pl-2">Menu</p>
           </div>
           <div
             class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -88,60 +90,60 @@
             <a class="d-block" href="">Youtube</a>
           </div>
         </aside>
-        <div class="center p-3 col-12 col-md-8 position-relative">
+        <section class="center p-3 col-12 col-md-8 position-relative">
           <div class="category-title">
-            <span class="f-size-20">MEN'S SNEAKERS</span>
+            <h6 class="f-size-20">MEN'S SNEAKERS</h6>
           </div>
           <div class="category-products">
             <a href="product.html" onclick="saveData('men1')">
               <img src="men_category/men-1.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">150 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
             </a>
             <a href="product.html" onclick="saveData('men2')">
               <img src="men_category/men-2.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">150 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
             </a>
             <a href="product.html" onclick="saveData('men3')">
               <img src="men_category/men-3.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">150 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
             </a>
             <a href="product.html" onclick="saveData('men4')">
               <img src="men_category/men-4.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">89.99 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">89.99 &dollar;</p>
             </a>
             <a href="product.html" onclick="saveData('men5')">
               <img src="men_category/men-5.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">150 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
             </a>
             <a href="product.html" onclick="saveData('men6')">
               <img src="men_category/men-6.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">90 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">90 &dollar;</p>
             </a>
             <a href="product.html" onclick="saveData('men7')">
               <img src="men_category/men-7.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">150 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
             </a>
             <a href="product.html" onclick="saveData('men8')">
               <img src="men_category/men-8.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">250 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">250 &dollar;</p>
             </a>
             <a href="product.html" onclick="saveData('men9')">
               <img src="men_category/men-9.jpg" alt="" />
-              <span class="name-category">Men Sneakers</span>
-              <span class="price-product">150 &dollar;</span>
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
             </a>
           </div>
-          <div id="menu-window" class="position-fixed menu-window d-none">
+          <nav id="menu-window" class="position-fixed menu-window d-none">
             <div>
-              <span class="f-size-14 d-block">SHOP</span>
+              <p class="f-size-14 d-block">SHOP</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
@@ -149,7 +151,7 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">COMPANY</span>
+              <p class="f-size-14 d-block">COMPANY</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Our Story</a></li>
                 <li><a href="">Careeres</a></li>
@@ -158,7 +160,7 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">SUPPORT</span>
+              <p class="f-size-14 d-block">SUPPORT</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
@@ -166,15 +168,15 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">STORES</span>
+              <p class="f-size-14 d-block">STORES</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
                 <li><a href="">Objects</a></li>
               </ul>
             </div>
-          </div>
-        </div>
+          </nav>
+        </section>
         <aside
           class="asside-right pl-0 pr-0 col-2 d-none d-md-flex flex-column"
         >
@@ -216,22 +218,22 @@
           </div>
           <div class="col text-right pr-4 pt-4 pb-0 indicator">
             <div>
-              <span class="f-size-14 text-nowrap">01 / 05</span>
+              <p class="f-size-14 text-nowrap">01 / 05</p>
             </div>
             <div>
-              <span class="line line-long d-block mt-2 ml-2">&nbsp;</span>
-              <span class="line d-block mt-2 ml-2">&nbsp;</span>
-              <span class="line d-block mt-2 ml-2">&nbsp;</span>
-              <span class="line d-block mt-2 ml-2">&nbsp;</span>
-              <span class="line d-block mt-2 ml-2">&nbsp;</span>
+              <p class="line line-long d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
             </div>
           </div>
           <div class="col text-right ">
-            <span class="transform-text">Scroll Down</span>
+            <p class="transform-text">Scroll Down</p>
           </div>
         </aside>
       </div>
-    </div>
+    </main>
     <script>
       var windowMenu = document.getElementById("menu-window");
       var menuButton = document.getElementById("menu-button");

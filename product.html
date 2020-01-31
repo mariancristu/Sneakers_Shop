@@ -25,12 +25,12 @@
     <title>SNEAKERS SHOP -- Main Page</title>
   </head>
   <body onresize="resizeEvent()" onload="loaded()">
-    <div class="main-container h-100 d-flex flex-column">
-      <div
+    <main class="main-container h-100 d-flex flex-column">
+      <nav
         class="small-nav col flex-grow-0 d-inline-flex d-md-none position-relative"
       >
-        <span class="">SNEAKERS SHOP</span>
-        <div class="dropdown">
+        <a href="main.html">SNEAKERS SHOP</a>
+        <div class="dropdown m-0">
           <button
             id="right-menu"
             type="button"
@@ -56,11 +56,13 @@
             <a class="d-block" href="">STORES</a>
           </div>
         </div>
-      </div>
+      </nav>
       <div class="small-main-container h-100 d-flex col-11 max-h pl-0 pr-0">
         <aside class="asside-menu col-2 pl-0 pr-0 d-none d-md-flex flex-column">
           <div class="col-1 mw-100 pt-3 pb-3">
-            <span class="text-nowrap">SNEAKERS SHOP</span>
+            <a href="main.html" class="text-nowrap text-decoration-none"
+              >SNEAKERS SHOP</a
+            >
           </div>
           <div
             class="category-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -74,11 +76,11 @@
             class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2"
           >
             <div>
-              <span class="icon-menu d-block">&nbsp;</span>
-              <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
-              <span class="icon-menu icon-menu-2 d-block"></span>
+              <p class="icon-menu d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-1 d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-2 d-block"></p>
             </div>
-            <span class="menu-link pl-2">Menu</span>
+            <p class="menu-link pl-2">Menu</p>
           </div>
           <div
             class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -89,32 +91,32 @@
             <a class="d-block" href="">Youtube</a>
           </div>
         </aside>
-        <div class="center p-0 col-12 col-md-8 position-relative">
+        <section class="center p-0 col-12 col-md-8 position-relative">
           <div class="product-container">
             <div class="first-element">
-              <div>
+              <figure>
                 <img src="#" alt="No-Image" />
-              </div>
-              <div>
+              </figure>
+              <figure>
                 <img src="#" alt="No-Image" />
-              </div>
-              <div>
+              </figure>
+              <figure>
                 <img src="#" alt="No-Image" />
-              </div>
-              <div>
+              </figure>
+              <figure>
                 <img src="#" alt="No-Image" />
-              </div>
+              </figure>
             </div>
             <div class="second-element">
               <div class="details">
                 <div class="info-details">
                   <div class="d-flex flex-column justify-content-center pl-3">
-                    <span>Men`s</span>
-                    <span class="d-block inf pt-1">Multicolored Leather</span>
+                    <h6>Men`s</h6>
+                    <p class="d-block inf pt-1">Multicolored Leather</p>
                   </div>
-                  <span class="d-flex flex-column justify-content-center pr-3"
-                    >150 &dollar;</span
-                  >
+                  <p class="d-flex flex-column justify-content-center pr-3">
+                    150 &dollar;
+                  </p>
                 </div>
                 <div
                   class="d-flex justify-content-around align-items-center f-size-12 pl-3 pr-3"
@@ -128,7 +130,7 @@
                   <a href="">46</a>
                 </div>
                 <div class="pl-3 pr-3">
-                  <span class="pt-3 pb-3 d-block">Details</span>
+                  <p class="pt-3 pb-3 d-block">Details</p>
                   <p class="inf">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Dignissimos quas cupiditate natus magni ratione deserunt,
@@ -165,26 +167,24 @@
                     <li data-target="#carouselSneakers" data-slide-to="3"></li>
                   </ol>
                   <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <figure class="carousel-item active">
                       <img src="#" alt="No-Image" />
-                    </div>
-                    <div class="carousel-item">
+                    </figure>
+                    <figure class="carousel-item">
                       <img src="#" alt="No-Image" />
-                    </div>
-                    <div class="carousel-item">
+                    </figure>
+                    <figure class="carousel-item">
                       <img src="#" alt="No-Image" />
-                    </div>
-                    <div class="carousel-item">
+                    </figure>
+                    <figure class="carousel-item">
                       <img src="#" alt="No-Image" />
-                    </div>
+                    </figure>
                   </div>
                 </div>
                 <div class="slider-controls">
-                  <span
-                    id="counter"
-                    class="flex-grow-1 text-right pr-4 f-size-12"
-                    >01 / 04</span
-                  >
+                  <p id="counter" class="flex-grow-1 text-right pr-4 f-size-12">
+                    01 / 04
+                  </p>
                   <div class="pl-3 h-100">
                     <button
                       onclick="prev()"
@@ -203,9 +203,9 @@
               </div>
             </div>
           </div>
-          <div id="menu-window" class="position-fixed menu-window d-none">
+          <nav id="menu-window" class="position-fixed menu-window d-none">
             <div>
-              <span class="f-size-14 d-block">SHOP</span>
+              <p class="f-size-14 d-block">SHOP</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
@@ -213,7 +213,7 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">COMPANY</span>
+              <p class="f-size-14 d-block">COMPANY</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Our Story</a></li>
                 <li><a href="">Careeres</a></li>
@@ -222,7 +222,7 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">SUPPORT</span>
+              <p class="f-size-14 d-block">SUPPORT</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
@@ -230,15 +230,15 @@
               </ul>
             </div>
             <div>
-              <span class="f-size-14 d-block">STORES</span>
+              <p class="f-size-14 d-block">STORES</p>
               <ul class="d-inline f-size-12">
                 <li><a href="">Men</a></li>
                 <li><a href="">Women</a></li>
                 <li><a href="">Objects</a></li>
               </ul>
             </div>
-          </div>
-        </div>
+          </nav>
+        </section>
         <aside
           class="asside-right pl-0 pr-0 col-2 d-none d-md-flex flex-column"
         >
@@ -286,11 +286,11 @@
             </div>
           </div>
           <div class="col text-right ">
-            <span class="transform-text">Scroll Down</span>
+            <p class="transform-text">Scroll Down</p>
           </div>
         </aside>
       </div>
-    </div>
+    </main>
     <script>
       var windowMenu = document.getElementById("menu-window");
       var menuButton = document.getElementById("menu-button");

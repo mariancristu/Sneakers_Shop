@@ -52,7 +52,7 @@
   mix-blend-mode: multiply;
 }
 
-.first-element > div {
+.first-element > figure {
   padding: 10px;
   text-align: center;
   background-color: var(--gray-color);
@@ -137,7 +137,7 @@
   margin: 0;
 }
 
-.carousel-inner > div {
+.carousel-inner > figure {
   text-align: center;
 }
 
