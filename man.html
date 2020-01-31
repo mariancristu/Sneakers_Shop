@@ -24,12 +24,12 @@
     <title>SNEAKERS SHOP -- Main Page</title>
   </head>
   <body onresize="resizeEvent()">
-    <div class="main-container h-100 d-flex flex-column">
-      <div
+    <section class="main-container h-100 d-flex flex-column">
+      <nav
         class="small-nav col flex-grow-0 d-inline-flex d-md-none position-relative"
       >
-        <span class="">SNEAKERS SHOP</span>
-        <div class="dropdown">
+        <a href="main.html">SNEAKERS SHOP</a>
+        <div class="dropdown m-0">
           <button
             id="right-menu"
             type="button"
@@ -55,11 +55,13 @@
             <a class="d-block" href="">STORES</a>
           </div>
         </div>
-      </div>
+      </nav>
       <div class="small-main-container h-100 d-flex col-11 max-h pl-0 pr-0">
         <aside class="asside-menu col-2 pl-0 pr-0 d-none d-md-flex flex-column">
           <div class="col-1 mw-100 pt-3 pb-3">
-            <span class="text-nowrap">SNEAKERS SHOP</span>
+            <a href="main.html" class="text-nowrap text-decoration-none"
+              >SNEAKERS SHOP</a
+            >
           </div>
           <div
             class="category-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -73,11 +75,11 @@
             class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2"
           >
             <div>
-              <span class="icon-menu d-block">&nbsp;</span>
-              <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
-              <span class="icon-menu icon-menu-2 d-block"></span>
+              <p class="icon-menu d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-1 d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-2 d-block"></p>
             </div>
-            <span class="menu-link pl-2">Menu</span>
+            <p class="menu-link pl-2">Menu</p>
           </div>
           <div
             class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
@@ -231,7 +233,7 @@
           </div>
         </aside>
       </div>
-    </div>
+    </section>
     <script>
       var windowMenu = document.getElementById("menu-window");
       var menuButton = document.getElementById("menu-button");

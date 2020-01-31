@@ -11,6 +11,11 @@ body {
   min-height: 100vh;
 }
 
+body p,
+figure {
+  margin-bottom: 0 !important;
+}
+
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -243,6 +248,6 @@ body {
   }
 
   .small-main-container {
-    min-height: calc(100% - 37px);
+    min-height: calc(100% - 50px);
   }
 }
