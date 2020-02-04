@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/principal.css" />
+    <link rel="stylesheet" href="css/man.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton:500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/8de13782d2.js"></script>
+    <title>SNEAKERS SHOP -- Main Page</title>
+  </head>
+  <body onresize="resizeEvent()">
+    <main class="main-container h-100 d-flex flex-column">
+      <h1 class="d-none">Products Page</h1>
+      <nav
+        class="small-nav col flex-grow-0 d-inline-flex d-md-none position-relative"
+      >
+        <a href="main.html">SNEAKERS SHOP</a>
+        <div class="dropdown m-0">
+          <button
+            id="right-menu"
+            type="button"
+            class="btn right-menu"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="icon-menu d-block">&nbsp;</span>
+            <span class="icon-menu icon-menu-1 d-block">&nbsp;</span>
+            <span class="icon-menu icon-menu-2 d-block"></span>
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right pl-3"
+            aria-labelledby="right-menu"
+          >
+            <a class="d-block" href="">SHOP</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">COMPANY</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">SUPPORT</a>
+            <div class="dropdown-divider"></div>
+            <a class="d-block" href="">STORES</a>
+          </div>
+        </div>
+      </nav>
+      <div class="small-main-container h-100 d-flex col-11 max-h pl-0 pr-0">
+        <aside class="asside-menu col-2 pl-0 pr-0 d-none d-md-flex flex-column">
+          <h2 class="d-none">Navigation Menu</h2>
+          <div class="col-1 mw-100 pt-3 pb-3">
+            <a href="main.html" class="text-nowrap text-decoration-none"
+              >SNEAKERS SHOP</a
+            >
+          </div>
+          <div
+            class="category-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
+          >
+            <a class="d-block" href="man.html">Men</a>
+            <a class="d-block" href="">Women</a>
+            <a class="d-block" href="">Objects</a>
+          </div>
+          <div
+            id="menu-button"
+            class="col mw-100 d-flex align-items-center pt-3 pb-3 ml-2"
+          >
+            <div>
+              <p class="icon-menu d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-1 d-block">&nbsp;</p>
+              <p class="icon-menu icon-menu-2 d-block"></p>
+            </div>
+            <p class="menu-link pl-2">Menu</p>
+          </div>
+          <div
+            class=" menu-link col-3 mw-100 d-flex flex-column justify-content-center ml-2 line-height-40"
+          >
+            <a class="d-block" href="">Instagram</a>
+            <a class="d-block" href="">Facebook</a>
+            <a class="d-block" href="">Twitter</a>
+            <a class="d-block" href="">Youtube</a>
+          </div>
+        </aside>
+        <section class="center p-3 col-12 col-md-8 position-relative">
+          <h2 class="d-none">Products Section</h2>
+          <div class="category-title">
+            <h6 class="f-size-20">MEN'S SNEAKERS</h6>
+          </div>
+          <div class="category-products">
+            <a href="product.html" onclick="saveData('men1')">
+              <img src="men_category/men-1.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
+            </a>
+            <a href="product.html" onclick="saveData('men2')">
+              <img src="men_category/men-2.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
+            </a>
+            <a href="product.html" onclick="saveData('men3')">
+              <img src="men_category/men-3.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
+            </a>
+            <a href="product.html" onclick="saveData('men4')">
+              <img src="men_category/men-4.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">89.99 &dollar;</p>
+            </a>
+            <a href="product.html" onclick="saveData('men5')">
+              <img src="men_category/men-5.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
+            </a>
+            <a href="product.html" onclick="saveData('men6')">
+              <img src="men_category/men-6.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">90 &dollar;</p>
+            </a>
+            <a href="product.html" onclick="saveData('men7')">
+              <img src="men_category/men-7.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
+            </a>
+            <a href="product.html" onclick="saveData('men8')">
+              <img src="men_category/men-8.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">250 &dollar;</p>
+            </a>
+            <a href="product.html" onclick="saveData('men9')">
+              <img src="men_category/men-9.jpg" alt="" />
+              <p class="name-category">Men Sneakers</p>
+              <p class="price-product">150 &dollar;</p>
+            </a>
+          </div>
+          <nav id="menu-window" class="position-fixed menu-window d-none">
+            <div>
+              <p class="f-size-14 d-block">SHOP</p>
+              <ul class="d-inline f-size-12">
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Objects</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="f-size-14 d-block">COMPANY</p>
+              <ul class="d-inline f-size-12">
+                <li><a href="">Our Story</a></li>
+                <li><a href="">Careeres</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privacy</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="f-size-14 d-block">SUPPORT</p>
+              <ul class="d-inline f-size-12">
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Objects</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="f-size-14 d-block">STORES</p>
+              <ul class="d-inline f-size-12">
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">Objects</a></li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+        <aside
+          class="asside-right pl-0 pr-0 col-2 d-none d-md-flex flex-column"
+        >
+        <h3 class="d-none">Right section</h3>
+          <div class="col text-right pt-3 pr-4">
+            <div class="pb-3">
+              <span id="span" class="f-size-14 d-none">Cart</span>
+              <div
+                class="d-inline-block circle text-center"
+                id="test"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i
+                  class="fa fa-shopping-cart"
+                  onmouseover="otherHoverFunc(event)"
+                ></i>
+              </div>
+            </div>
+            <div class="pb-3">
+              <span class="f-size-14 d-none">Search</span>
+              <div
+                class="d-inline-block circle text-center"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i class="fa fa-search" onmouseover="otherHoverFunc(event)"></i>
+              </div>
+            </div>
+            <div class="pb-3">
+              <span class="f-size-14 d-none">Account</span>
+              <div
+                class="d-inline-block circle text-center"
+                onmouseover="hoverFunc(event)"
+                onmouseout="exitHoverFunc(event)"
+              >
+                <i class="fa fa-user" onmouseover="otherHoverFunc(event)"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col text-right pr-4 pt-4 pb-0 indicator">
+            <div>
+              <p class="f-size-14 text-nowrap">01 / 05</p>
+            </div>
+            <div>
+              <p class="line line-long d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+              <p class="line d-block mt-2 ml-2">&nbsp;</p>
+            </div>
+          </div>
+          <div class="col text-right ">
+            <p class="transform-text">Scroll Down</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script>
+      var windowMenu = document.getElementById("menu-window");
+      var menuButton = document.getElementById("menu-button");
+      menuButton.onclick = function() {
+        if (windowMenu.classList.contains("d-none")) {
+          windowMenu.classList.remove("d-none");
+        } else {
+          windowMenu.classList.add("d-none");
+        }
+      };
+      function resizeEvent() {
+        if (!windowMenu.classList.contains("d-none")) {
+          windowMenu.classList.add("d-none");
+        }
+      }
+      function hoverFunc(event) {
+        event.target.previousElementSibling.classList.remove("d-none");
+      }
+      function exitHoverFunc(event) {
+        event.target.previousElementSibling.classList.add("d-none");
+      }
+
+      function otherHoverFunc(event) {
+        event.target.parentNode.previousElementSibling.classList.remove(
+          "d-none"
+        );
+      }
+
+      function saveData(data) {
+        localStorage.setItem("location", data);
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
